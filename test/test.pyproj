@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>31d48f73-705d-4534-b936-3d18ef67e978</ProjectGuid>
+    <ProjectGuid>ac958a71-2ff7-445e-99d4-675eca792245</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>docsim.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>docsim</Name>
-    <RootNamespace>docsim</RootNamespace>
+    <Name>test</Name>
+    <RootNamespace>test</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,16 +21,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="common\doc_tools.py">
+    <Compile Include="common\test_doc_tools.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="common\str_tools.py">
+    <Compile Include="common\test_str_tools.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="common\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="docsim.py" />
+    <Compile Include="test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\docsim\docsim.pyproj">
+      <Name>docsim</Name>
+      <Project>{31d48f73-705d-4534-b936-3d18ef67e978}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="common\" />

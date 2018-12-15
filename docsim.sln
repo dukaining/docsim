@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "docsim", "docsim\docsim.pyproj", "{31D48F73-705D-4534-B936-3D18EF67E978}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "test", "test\test.pyproj", "{AC958A71-2FF7-445E-99D4-675ECA792245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{31D48F73-705D-4534-B936-3D18EF67E978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{31D48F73-705D-4534-B936-3D18EF67E978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC958A71-2FF7-445E-99D4-675ECA792245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC958A71-2FF7-445E-99D4-675ECA792245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
