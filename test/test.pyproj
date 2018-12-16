@@ -30,14 +30,14 @@
     <Compile Include="test.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="common\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\docsim\docsim.pyproj">
       <Name>docsim</Name>
       <Project>{31d48f73-705d-4534-b936-3d18ef67e978}</Project>
       <Private>True</Private>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="common\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

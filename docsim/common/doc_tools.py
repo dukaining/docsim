@@ -18,6 +18,26 @@ def content_to_words(content):
     return words.strip()
 
 
+def load_stopwords(path):
+    """
+    从指定的路径加载停用词
+    :param path: 存放停用词文件的目录
+    """
+    import os
+    stopwords.clear()
+    if not(path.endswith('/') or path.endswith('\\')):
+        path = path + '/'
+    stopwords_files = os.listdir(path)
+    for filename in stopwords_files:
+        full_filename = path + filename
+        with open(full_filename, encoding='utf-8') as f:
+            for line in f.readlines():
+                line = line.strip()
+                if line not in stopwords:
+                    stopwords.append(line)
+
+
+
 if __name__ == '__main__':
     stopwords.append('的')
     stopwords.append('是')
