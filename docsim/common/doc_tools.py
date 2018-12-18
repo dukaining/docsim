@@ -20,7 +20,7 @@ def content_to_words(content):
 
 def load_stopwords(path):
     """
-    从指定的路径加载停用词
+    从指定的路径加载停用词，目录中的停用词文件需要时utf-8编码
     :param path: 存放停用词文件的目录
     """
     import os
@@ -35,6 +35,8 @@ def load_stopwords(path):
                 line = line.strip()
                 if line not in stopwords:
                     stopwords.append(line)
+
+
 
 
 

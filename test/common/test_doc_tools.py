@@ -20,3 +20,10 @@ class TestDocTools(unittest.TestCase):
         self.assertNotIn('是', words)
         self.assertNotIn('一位', words)
 
+    def test_load_stopwords(self):
+        doc_tools.load_stopwords('D:\\Study\\gongwen\\data\\stopwords')
+        self.assertIn('具体说来', doc_tools.stopwords)
+        self.assertIn('一则', doc_tools.stopwords)
+        self.assertIn('allow', doc_tools.stopwords)
+        self.assertIn('打开天窗说亮话', doc_tools.stopwords)
+        self.assertIn('难道说', doc_tools.stopwords)
