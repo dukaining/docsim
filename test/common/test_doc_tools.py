@@ -21,7 +21,7 @@ class TestDocTools(unittest.TestCase):
         self.assertNotIn('一位', words)
 
     def test_load_stopwords(self):
-        doc_tools.load_stopwords('D:\\Study\\gongwen\\data\\stopwords')
+        doc_tools.load_stopwords(r'D:\Work\nlp\docsim\data\stopwords')
         self.assertIn('具体说来', doc_tools.stopwords)
         self.assertIn('一则', doc_tools.stopwords)
         self.assertIn('allow', doc_tools.stopwords)
