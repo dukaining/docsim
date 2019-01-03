@@ -24,10 +24,16 @@
     <Compile Include="common\doc_tools.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="common\frozenjson.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="common\str_tools.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="common\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="config.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="docsim.py" />
