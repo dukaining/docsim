@@ -1,0 +1,10 @@
+{
+  "Database": {
+
+  },
+  "Gensim": {
+    "dictionaryFile": "../Data/Gensim/trained_dictionary.dic",
+    "indexFile": "../Data/Gensim/trained.index",
+    "corpusFile": "../Data/Gensim/trained_corpus.mm"
+  }
+}

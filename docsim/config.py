@@ -10,5 +10,5 @@ class Config(FrozenJSON):
 
 
 if __name__=='__main__':
-    conf = Config(r'd:\temp\1.json')
-    print(len(conf.Schedule.speakers))
+    conf = Config()
+    print(conf.Gensim.dictionaryFile)
