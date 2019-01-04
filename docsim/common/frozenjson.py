@@ -5,6 +5,10 @@ class FrozenJSON:
     def __init__(self, mapping):
         self.__data = dict(mapping)
 
+
+    def loadmapping(self, mapping):
+        self.__data = dict(mapping)
+
     
     @classmethod
     def build(cls, obj):

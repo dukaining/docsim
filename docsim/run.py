@@ -1,3 +1,6 @@
-def load_model():
-    from gensim import corpora, models, similarities
+from config import Config
 
+conf = Config()
+
+if __name__ == '__main__':
+    pass

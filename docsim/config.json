@@ -3,8 +3,9 @@
 
   },
   "Gensim": {
-    "dictionaryFile": "../Data/Gensim/trained_dictionary.dic",
-    "indexFile": "../Data/Gensim/trained.index",
-    "corpusFile": "../Data/Gensim/trained_corpus.mm"
+    "dictionaryFile": "../data/Gensim/trained_dictionary.dic",
+    "indexFile": "../data/Gensim/trained.index",
+    "corpusFile": "../data/Gensim/trained_corpus.mm",
+    "stopwordsPath": "../Data/stopwords"
   }
 }
